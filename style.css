@@ -1,0 +1,265 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+.banner{
+    width: 100%;
+    height: 60vh;
+    background-image: url(background.jpeg);
+    background-size: cover;
+    background-position: center;
+    padding-left: 8%;
+    padding-right: 8%;
+    box-sizing: border-box;
+
+}
+.navbar h2{
+    color: aqua;
+}
+.navbar{
+    height: 12%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 25px;
+    
+}
+.navbar ul li{
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px 25px;
+
+}
+.navbar ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+.navbar ul li a:hover{
+    color: aqua;
+    transition: 0.4s;
+}
+.about .main h2{
+    padding-top: 30px;
+    padding-left: 43%; 
+    font-size: 30px;
+    color:#009688;  
+}
+.about .main img{
+    padding-top: 50px;
+    padding-left: 26%;
+    width: 100vh;
+    height: 50vh;
+}
+.about .main .text-content{
+    padding-top: 30px;
+    padding-left: 15%;
+    padding-right: 15%;
+    padding-bottom: 30px;
+    
+    font-size: medium;
+    font-style: oblique;
+}
+#copyright{
+    max-width: 100%;
+    height: 40px;
+    background-color: #009688;
+   
+    padding-top: 20px;
+    padding-left: 40%;
+    
+}
+#copyright
+.row{
+    display: flex;
+    height: 88%;
+    align-items: center;
+
+}
+.col{
+    flex-basis: 50%;
+}
+.head{
+    color: #ffffff;
+    font-size: 100px;
+    align: center;
+}
+p{
+    color: #fff;
+    font-size: 15px;
+    line-height: 15px;
+}
+.check_btn{
+    width: 200px;
+    color: #000;
+    font-size: 15px;
+    padding: 12px 0;
+    background: #fff;
+    border:2px solid #009688;
+    border-radius: 25px;
+    outline: none;
+    margin-top: 30px;
+    background: transparent;
+    color: #fff;
+    cursor: pointer;
+    transition: -10s;
+}
+button:active{
+    transform: scale(0.98);
+}
+button:hover{
+    background: #fff;
+    color:#162938;
+}
+.symptom_checker{
+    width: 100%;
+    height: 100vh;
+    background-image: url(background.jpeg);
+    background-size: cover;
+    background-position: center;
+    padding-left: 8%;
+    padding-right: 8%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: aquamarine;
+    
+}
+.symptom_checker:before{
+    transform: skewX(-3deg);
+    pointer-events: none;
+}
+.wrapper{
+    position: relative;
+    width: 650px;
+    height: 600px;
+    background-color: rgb(189, 221, 221);
+    border: 2px solid rgba(255, 255, 255, .5);
+    border-radius: 20px;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 30px rgba(0, 0, 0, .5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.wrapper .checker{
+    width: 100%;
+    padding: 40px;
+}
+.checker h2{
+    font-size: 2em;
+    font-weight: bolder;
+    font-family: fantasy;
+    color: #162938;
+    text-align: center;
+}
+.inputbox{
+    
+    position: relative;
+    width: 100%;
+    height: 50px;
+    border-bottom: 2px solid #162938;
+    margin: 30px 0;
+}
+
+.inputbox label{
+    position: absolute;
+    top: 60%;
+    left: 5px;
+    transform: translateY(-50%);
+    font-size: 1em;
+    color: #162938;
+    font-weight: 500;
+    pointer-events: none;
+    transition: -5s;
+}
+.gender label{
+    color: #162938;
+    font-weight: 500; 
+    font-size: medium;
+}
+
+.inputbox input:focus~label,
+.inputbox input:valid~label{
+    top: -5px;
+}
+
+.inputbox input{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;  
+    font-size: 1em;
+    color: #162938;
+    font-weight: 600;  
+    padding: 0 35px 0 5px;
+}
+
+.symptomselect{
+    margin-top: 25px;
+}
+
+.submit{
+    width: 100%;
+    height: 40px;
+    background-color: #162938;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1em;
+    color: #fff;
+    font-weight: 500;
+    margin-top: 20px;
+
+}
+
+.gender label{
+    position: relative;
+    cursor: pointer;
+}
+
+.gender label input{
+    display: none;
+}
+
+.gender label span{
+    position: relative;
+    display: inline-block;
+    padding: 5px;
+    margin: 20px 10px;
+    width: 65px;
+    font-size: medium;
+    font-weight: 550;
+    border-radius: 2px;
+    color: #162938;
+    background: #a7cfee;
+    border: 1px solid #fff;
+    border-radius: 15px;
+
+}
+
+.gender label input:checked~span{
+    background: #162938;
+    color: #fff;
+    border: 1px solid #009688;
+}
+
+.livesearch{
+    width: 100%;
+    height: 50px;
+    border-radius: 5px;
+   
+}
+.dislay{
+    background-color: #fff;
+}
+h4{
+    padding-top: 10px;
+}

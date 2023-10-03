@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.min.css">
+    
+</head>
+<body>
+    
+    <!--retriving symptom-->
+    <div class="symptom_checker">
+        <div class="wrapper">
+            <nav>
+
+            </nav>
+        
+            <div class="checker">
+                <h2>SYMPTOM CHECKER</h2>
+                <form action="#"id="symptomsForm">
+                    <div class="inputbox">
+                        
+                        <input type="number" min="1950" id="yearOfBirth" required>
+                        <label for="text" class="age" ><B>Enter the Year of Birth</B></label>
+                    </div>
+                    <div class="gender">
+                       
+                        <B> Gender:</B>
+                        <label>
+                        <input type="radio" value="male" id="gender" name="gender" class="male">
+                        <span class="male">Male</span>
+                        </label>
+
+                        <label>
+                        <input type="radio" value="female" id="gender" name="gender" class="female">
+                        <span class="female">Female</span>
+                        </label>
+
+                   </div>
+                    <div class="symptomselect">
+                     <label for="text"><B>Select Symptom</B></label><br>
+                     <input type="text" id="symptomInput" onkeyup="filterSymptoms()" placeholder="Search for symptoms..">
+                     <select id="symptoms" >
+                         
+                         <!-- Add more options here -->
+                    </select>
+                    </div>
+                          <!--add this when you needed for tag generator -->
+                    <!--div-->
+                         <!-- Input box to show selected options -->
+                        <!--input type="text" class="inputtag" id="selectedOptions" readonly>
+                    </div-->
+                    <button type="submit" class="submit" onclick="getDiagnosis()" >submit</button>
+                    
+                    <div id="diagnosis" class="diagnosis">
+                        <h4>Diagnosis:</h4>
+                        <p id="diagnosisName"></p> <!-- This is the div where diagnosis will be displayed -->
+                      </div>
+                </form>
+            </div> 
+        </div> 
+    </div>
+    <script src="js/script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.jquery.min.js"></script>
+    <script type="text/javascript">
+          $(".livesearch").chosen();
+    </script>
+</body>
+</html>
